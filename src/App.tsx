@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
+import Form from './components/Form';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<React.Fragment>
+			<CssBaseline />
+			<Container maxWidth="lg" style={{textAlign: 'center'}}>
+				<Typography component="h4" variant="h4" color="primary" align="center">
+          Weather Forecast
+        </Typography>
+        <Form />
+			</Container>
+		</React.Fragment>
+	);
 }
 
 export default App;
