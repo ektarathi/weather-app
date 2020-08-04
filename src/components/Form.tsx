@@ -49,8 +49,6 @@ const Form: React.SFC<FormProps> = () => {
 			.then((data) => data)
 		);
 	};
-
-    console.log("checking: ", weather.length);
     
 	return (
 		<div>
