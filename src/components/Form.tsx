@@ -7,6 +7,7 @@ import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Weather from "./Weather";
+import { key } from '../ApiKey';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	})
 );
 
-const APIKEY = "2eccc18dc89efca8cf2fcc3f53f6b503";
+const APIKEY = key;
 
 export interface FormProps {}
 
