@@ -45,8 +45,8 @@ const Form: React.SFC<FormProps> = () => {
 			await fetch(
 				`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKEY}`
 			)
-				.then((res) => res.json())
-				.then((data) => data)
+			.then((res) => res.json())
+			.then((data) => data)
 		);
 	};
 
@@ -85,7 +85,6 @@ const Form: React.SFC<FormProps> = () => {
 				</Button>
 			</form>
             {weather.length !== undefined ? '' : <Weather weatherData={weather} />}
-		    
 		</div>
 	);
 };

@@ -1,38 +1,38 @@
-.App {
+.app {
   text-align: center;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-description {
+  height: 290px;
+  background-position: center;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clouds {
+  background: url('../src/assets/images/cloudy.png');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.thunderstorm {
+  background: url('../src/assets/images/thunderstorm.png');
 }
 
-.App-link {
-  color: #61dafb;
+.rain {
+  background: url('../src/assets/images/rain.png');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.snow {
+  background: url('../src/assets/images/snow.png');
+}
+
+.drizzle {
+  background: url('../src/assets/images/drizzle.jpg');
+}
+
+.extreme {
+  background: url('../src/assets/images/extreme.jpg');
+}
+
+.sunny {
+  background: url('../src/assets/images/sunny.png');
 }
