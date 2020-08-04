@@ -28,9 +28,6 @@ const Weather: React.SFC<WeatherProps> = ({weatherData}: WeatherProps) => {
 
     return ( 
         <StylesProvider>
-            <Typography variant="h6" component="h6">
-                {weatherData.name}
-            </Typography>
             <RadioGroup aria-label="temperature" name="city-temperature" value={value} onChange={handleChange} style={{display: 'block'}}>
                 <FormControlLabel value="metric" control={<Radio />} label="Celsius" />
                 <FormControlLabel value="imperial" control={<Radio />} label="Farenheit" />
