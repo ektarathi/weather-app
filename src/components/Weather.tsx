@@ -50,7 +50,7 @@ const Weather: React.SFC<WeatherProps> = ({ weatherData }: WeatherProps) => {
 					Current Temperature{" "}
 					{value === "metric" ? celsius + "°C" : fahrenheit + "°F"}
 				</Typography>
-				<Typography variant="body1">
+				<Typography variant="h5">
 					{weatherData.weather[0].description}
 				</Typography>
 				<Table weatherData={weatherData} conversionValue={value}/>
