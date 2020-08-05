@@ -4,9 +4,10 @@
 }
 
 .weather-description {
-  height: 290px;
+  height: 100%;
   background-position: center;
   background-size: cover;
+  margin-bottom: 30px;
 }
 
 .clouds {
@@ -35,4 +36,9 @@
 
 .sunny {
   background: url('../src/assets/images/sunny.png');
+}
+
+.clear {
+  background: url('../src/assets/images/Clear.jpg');
+  background-size: cover;
 }
