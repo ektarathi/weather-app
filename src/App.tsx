@@ -34,7 +34,7 @@ function App() {
 				/>
 				<meta
 					name="keywords"
-					content="teraki,weather,berlin office, munich office, frankfurt office, dresden office"
+					content="teraki weather, teraki office location"
 				/>
 			</Helmet>
 			<StylesProvider>
