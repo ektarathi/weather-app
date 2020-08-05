@@ -22,10 +22,14 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 export interface WeatherInformationProps {
-    text: string; value: string;
+	text: string;
+	value: string;
 }
 
-const WeatherInformation: React.SFC<WeatherInformationProps> = ({text, value}: WeatherInformationProps) => {
+const WeatherInformation: React.SFC<WeatherInformationProps> = ({
+	text,
+	value,
+}: WeatherInformationProps) => {
 	const classes = useStyles();
 	return (
 		<List className={classes.listItem}>
@@ -47,7 +51,7 @@ const WeatherInformation: React.SFC<WeatherInformationProps> = ({text, value}: W
 					}
 				/>
 			</ListItem>
-			<Divider variant="inset" component="li" style={{marginLeft: 0}}/>
+			<Divider variant="inset" component="li" style={{ marginLeft: 0 }} />
 		</List>
 	);
 };
