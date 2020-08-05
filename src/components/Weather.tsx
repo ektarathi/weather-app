@@ -26,8 +26,9 @@ const Weather: React.SFC<WeatherProps> = ({ weatherData }: WeatherProps) => {
 		setValue((event.target as HTMLInputElement).value);
 	};
 
+	console.log(weatherData);
 	return (
-		<StylesProvider>
+		<React.Fragment>
 			<RadioGroup
 				aria-label="temperature"
 				name="city-temperature"
@@ -43,19 +44,23 @@ const Weather: React.SFC<WeatherProps> = ({ weatherData }: WeatherProps) => {
 				/>
 			</RadioGroup>
 			<Card className={`weather-description ${weatherName}`}>
-				<Box py={3}>
+				<Box py={2}>
+					<Typography variant="h4" component="h4">
+						{weatherData.name}
+					</Typography>
+					<Typography variant="body1">
+						{weatherData.weather[0].description}
+					</Typography>
+					<Typography variant="h5" component="h5">
+						{value === "metric" ? celsius + "°C" : fahrenheit + "°F"}
+					</Typography>
+				</Box>
+				<Box py={2}>
 					<i className={imgURL}></i>
 				</Box>
-				<Typography variant="h4" component="h4">
-					Current Temperature{" "}
-					{value === "metric" ? celsius + "°C" : fahrenheit + "°F"}
-				</Typography>
-				<Typography variant="h5">
-					{weatherData.weather[0].description}
-				</Typography>
 				<Table weatherData={weatherData} conversionValue={value}/>
 			</Card>
-		</StylesProvider>
+		</React.Fragment>
 	);
 };
 
