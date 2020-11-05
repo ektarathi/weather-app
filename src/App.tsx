@@ -47,7 +47,7 @@ function App() {
 						</Box>
 						<Box pb={2}>
 							<Typography variant="body1">
-								Welcome to Teraki. We have our offices located in Berlin,
+								Welcome to My Office. We have our offices located in Berlin,
 								Frankfurt and Munich.
 								<br />
 								<i> Note: Dresden office is opening soon.</i>
